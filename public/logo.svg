@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M32 0L32 0L32 32L0 32L0 0L32 0Z" id="path_1" />
+    <path d="M390 0L390 0L390 844L0 844L0 0L390 0Z" id="path_2" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+    <clipPath id="clip_2">
+      <use xlink:href="#path_2" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="Icon 32" clip-path="url(#clip_1)">
+    <path d="M32 0L32 0L32 32L0 32L0 0L32 0Z" id="Icon-32" fill="#FFFFFF" fill-opacity="0" stroke="none" />
+    <g id="Frame" clip-path="url(#clip_2)" transform="translate(-179 -406)">
+      <path d="M390 0L390 0L390 844L0 844L0 0L390 0Z" id="Frame" fill="#B22727" fill-opacity="0" stroke="none" />
+      <g id="Group" transform="translate(182 409)">
+        <path d="M13 0C20.1807 0 26 5.81932 26 13L26 13C26 20.1807 20.1807 26 13 26L13 26C5.81932 26 0 20.1807 0 13L0 13C0 5.81932 5.81932 0 13 0Z" id="Rectangle" fill="#FC4850" stroke="none" />
+        <path d="M13 7C13.5524 7 14 7.44764 14 8L14 18C14 18.5524 13.5524 19 13 19L13 19C12.4476 19 12 18.5524 12 18L12 8C12 7.44764 12.4476 7 13 7Z" id="Rectangle-2" fill="#FFFFFF" stroke="none" />
+        <path d="M10 9C10.5524 9 11 9.44764 11 10L11 16C11 16.5524 10.5524 17 10 17L10 17C9.44764 17 9 16.5524 9 16L9 10C9 9.44764 9.44764 9 10 9Z" id="Rectangle-2-Copy" fill="#FFFFFF" stroke="none" />
+        <path d="M7 11C7.55236 11 8 11.4476 8 12L8 13C8 13.5524 7.55236 14 7 14L7 14C6.44764 14 6 13.5524 6 13L6 12C6 11.4476 6.44764 11 7 11Z" id="Rectangle-2-Copy-3" fill="#FFFFFF" stroke="none" />
+        <path d="M16 9C16.5524 9 17 9.44764 17 10L17 16C17 16.5524 16.5524 17 16 17L16 17C15.4476 17 15 16.5524 15 16L15 10C15 9.44764 15.4476 9 16 9Z" id="Rectangle-2-Copy-2" fill="#FFFFFF" stroke="none" />
+        <path d="M19 11C19.5524 11 20 11.4476 20 12L20 13C20 13.5524 19.5524 14 19 14L19 14C18.4476 14 18 13.5524 18 13L18 12C18 11.4476 18.4476 11 19 11Z" id="Rectangle-2-Copy-4" fill="#FFFFFF" stroke="none" />
+      </g>
+    </g>
+  </g>
+</svg>
