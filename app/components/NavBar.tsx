@@ -20,7 +20,7 @@ export const NavBar = () => {
     } z-30 transition-all`}>
         <Link href="/" className="flex items-center" >
             <Image src="logo.svg" width={45} height={45} alt={'logo'} />
-           <span className="text-foreground text-xl font-bold ">Live AudiBook</span>
+           <span className="text-transparent text-xl font-bold  bg-clip-text bg-gradient-to-r from-red-600 to-purple-400 hover:bg-gradient-to-l transition-all">Live AudiBook</span>
         </Link>
         <div className="flex" >
             <CenterNavigationMenuLinks />
