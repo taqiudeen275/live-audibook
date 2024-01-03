@@ -5,6 +5,8 @@ import {Button} from "@/components/ui/button";
 import BentoGrid from "@/app/components/grid-items";
 import DemoAvatar from "@/app/components/test-avatar";
 import Pricing from "@/app/components/pricing";
+import WhyUs from "@/app/components/why-us";
+import Footer from "@/app/components/footer";
 
 export default function Home() {
   return (
@@ -36,10 +38,12 @@ export default function Home() {
           <section className=" w-screen px-32 py-32">
               <BentoGrid />
           </section>
-          <section className="h-screen">
+          <section className="mb-10">
               <Pricing />
           </section>
+          <WhyUs />
        </main>
+        <Footer />
     </>
   )
 }
