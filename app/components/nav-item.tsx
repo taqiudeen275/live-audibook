@@ -17,25 +17,25 @@ import {
 const components: { title: string; href: string; description: string }[] = [
     {
         title: "Text To Speech",
-        href: "#",
+        href: "/text-to-speech",
         description:
             "Transform written text into captivating spoken words with our Text to Speech (TTS) service.",
     },
     {
         title: "Voice Clone",
-        href: "#",
+        href: "/voice-cloning",
         description:
             "Imagine having your own virtual voice actor. With our Voice Cloning technology, you can recreate and personalize your unique voice for any application",
     },
     {
         title: "Voice Over",
-        href: "#",
+        href: "/voice-over",
         description:
             "Elevate your projects with professional-grade voiceovers using our Voice Over service. Whether it's a corporate presentation, marketing video, or e-learning module, our AI ensures clear, expressive, and engaging voiceovers that leave a lasting impact.",
     },
     {
         title: "Audio Book",
-        href: "#",
+        href: "/audiobook",
         description:
             "Imagine having your own virtual voice actor. With our Voice Cloning technology, you can recreate and personalize your unique voice for any application",
     },
@@ -63,14 +63,14 @@ export function CenterNavigationMenuLinks() {
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/docs" legacyBehavior passHref>
+                    <Link href="/#pricing" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                             Pricing
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/docs" legacyBehavior passHref>
+                    <Link href="/#about" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                             About
                         </NavigationMenuLink>

@@ -13,7 +13,7 @@ interface  Props{
 
 export default  function DemoAvatar({name, avatarUrl, audioUrl}: Props){
     return (
-            <Card  className="max-w-max p-4 rounded-full flex items-center space-x-4 bg-transparent backdrop-blur-md bg-gradient-to-r hover:bg-gradient-to-l transition-colors from-purple-500/15 to-pink-500/15" >
+            <Card  className="max-w-max p-4 rounded-full flex items-center max-h-max space-x-4 bg-transparent backdrop-blur-md bg-gradient-to-r hover:bg-gradient-to-l transition-colors from-purple-500/15 to-pink-500/15" >
                 <Avatar>
                     <AvatarImage src="https://github.com/shadcn.png" />
                     <AvatarFallback>CN</AvatarFallback>

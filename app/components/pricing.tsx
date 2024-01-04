@@ -1,6 +1,11 @@
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
 import {CheckCircle} from "lucide-react";
 import {Button} from "@/components/ui/button";
+import { motion } from "framer-motion"
+
+const pricingHead = { hidden: { opacity: 0 } }
+const pricingItems = { hidden: { x: -10, opacity: 0 } }
+
 
 const VoiceOverPlan :PlanProps[] = [
     {
@@ -35,7 +40,7 @@ const VoiceClonePlan :PlanProps[] = [
 ]
 const SuperPackPlan :PlanProps[] = [
     {
-        price: "35",
+        price: "$35",
         title: "Pro Plan",
         features: ["Unlimited words per month", "PDF import support", "Unlimited audio export", "Voice Cloning Support", "Audio Book Support",],
         btnText: "Upgrade To Pro",
@@ -52,32 +57,32 @@ const SuperPackPlan :PlanProps[] = [
 export default function Pricing(){
 
     return (
-    <div className="w-full space-y-10">
+    <motion.div className="w-full space-y-10" initial={{ opacity: 0, x: 15 }}  whileInView={{ opacity: 1, x: 0 }} transition={{delay:0.2}}>
         <div className="text-center">
             <h1 className="text-3xl">Pricing</h1>
             <h3 className="text-sm">Our plans are designed to provide the best value for your investment.</h3>
         </div>
-        <div className="flex items-center space-x-4 divide-x-2 gap-5">
+        <motion.div initial={{ opacity: 0, x: -15 }}  whileInView={{ opacity: 1, x: 0 }} transition={{delay:0.3}} className="flex items-center space-x-4 divide-x-2 gap-5">
             <div className="before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
                 <h1 className="font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-red-600 to-purple-400 hover:bg-gradient-to-l transition-colors">Voice Over Plan & Text To Speech</h1>
             </div>
             {VoiceOverPlan.map(plan => <Plan key={plan.title} price={plan.price} features={plan.features} title={plan.title}  btnText={plan.btnText} isPro={plan.isPro} />)}
-        </div>
-        <div className="flex items-center justify-between space-x-4 gap-5">
+        </motion.div>
+        <motion.div initial={{ opacity: 0, x: 15 }}  whileInView={{ opacity: 1, x: 0 }} transition={{delay:0.3}} className="flex items-center justify-between space-x-4 gap-5">
             {VoiceClonePlan.map(plan => <Plan key={plan.title} price={plan.price} features={plan.features} title={plan.title}  btnText={plan.btnText} isPro={plan.isPro} />)}
             <div className="before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
                 <h1 className="font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-red-600 to-purple-400 text-right hover:bg-gradient-to-l transition-colors">Audio Book & Voice Clone Plan</h1>
             </div>
-        </div>
-        <div className="flex items-center justify-between gap-7 flex-col">
+        </motion.div>
+        <motion.div  initial={{ opacity: 0, x: -15 }}  whileInView={{ opacity: 1, x: 0 }} transition={{delay:0.3}} className="flex items-center justify-between gap-7 flex-col">
             <div className="before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
                 <h1 className="font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-red-600 to-purple-400 text-center hover:bg-gradient-to-l transition-colors">SuperPack Plan</h1>
             </div>
             <div className="flex items-center justify-between gap-5">
                 {SuperPackPlan.map(plan => <Plan key={plan.title} price={plan.price} features={plan.features} title={plan.title}  btnText={plan.btnText} isPro={plan.isPro} />)}
             </div>
-        </div>
-    </div>
+        </motion.div>
+    </motion.div>
 )
 }
 

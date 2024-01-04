@@ -1,9 +1,10 @@
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
 import {BookAudio} from "lucide-react";
+import {motion} from "framer-motion";
 
 export default function WhyUs(){
     return (
-        <section id="about">
+        <motion.section id="about" initial={{ opacity: 0, x: 15 }}  whileInView={{ opacity: 1, x: 0 }} transition={{delay:0.3}}>
             <h1 className="text-3xl my-10">About Us</h1>
             <div className="grid grid-cols-3 auto-rows-auto gap-5">
                 <Card className="p-7 bg-transparent">
@@ -18,6 +19,6 @@ export default function WhyUs(){
 
                 </Card>
             </div>
-        </section>
+        </motion.section>
     )
 }

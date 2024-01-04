@@ -25,6 +25,8 @@ export default function Footer(){
                 <h1 className="text-2xl">Useful Links</h1>
                 <Link className="flex" href="#pricing"><Dot />Pricing</Link>
                 <Link className="flex" href="#about"><Dot />About</Link>
+                <Link className="flex" href="/sign-in"><Dot />Login</Link>
+                <Link className="flex" href="/sign-up"><Dot />Register</Link>
             </div>
 
         </div>
