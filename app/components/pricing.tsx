@@ -40,7 +40,7 @@ const VoiceClonePlan :PlanProps[] = [
 ]
 const SuperPackPlan :PlanProps[] = [
     {
-        price: "35",
+        price: "$35",
         title: "Pro Plan",
         features: ["Unlimited words per month", "PDF import support", "Unlimited audio export", "Voice Cloning Support", "Audio Book Support",],
         btnText: "Upgrade To Pro",
