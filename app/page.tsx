@@ -32,7 +32,7 @@ export default function Home() {
               </p>
 
           </motion.section>
-          <motion.section initial={{ opacity: 0, y: 15 }}  whileInView={{ opacity: 1, y: 0 }} transition={{delay:0.4}} className=" px-32 flex justify-between py-5" >
+          <motion.section initial={{ opacity: 0, y: 15 }}  whileInView={{ opacity: 1, y: 0 }} transition={{delay:0.4}} className=" px-32 flex w-screen justify-between py-5" >
               <DemoAvatar  audioUrl={""} avatarUrl={""} name={"Male Voice 1"}/>
               <DemoAvatar  audioUrl={""} avatarUrl={""} name={"Male Voice 2"}/>
               <DemoAvatar  audioUrl={""} avatarUrl={""} name={"Female Voice 1"}/>

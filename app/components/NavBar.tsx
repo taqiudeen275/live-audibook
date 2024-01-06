@@ -7,6 +7,7 @@ import {UserButton} from "@clerk/nextjs";
 import useScroll from "@/lib/hooks/use-scroll";
 import Link from "next/link";
 import {CenterNavigationMenuLinks} from "@/app/components/nav-item";
+import {Button} from "@/components/ui/button";
 
 
 
@@ -25,7 +26,12 @@ export const NavBar = () => {
         <div className="flex" >
             <CenterNavigationMenuLinks />
         </div>
-        <div className="flex space-x-2.5">
+        <div className="flex space-x-2.5 items-center">
+            <Link href="/dashboard" >
+                <Button variant="ghost">
+                    Dashboard
+                </Button>
+            </Link>
             <UserButton />
             <ModeToggle />
         </div>
