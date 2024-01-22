@@ -1,7 +1,7 @@
 "use client"
 import {Card} from "@/components/ui/card";
 import {Button} from "@/components/ui/button";
-import {ArrowLeftCircle, FastForward, Forward, ForwardIcon, Play, Rewind} from "lucide-react";
+import {ArrowLeftCircle, Download, FastForward, Forward, ForwardIcon, Play, Rewind} from "lucide-react";
 import VoiceSelect, {VoiceSelectProps} from "@/app/dashboard/text-to-speech/component/voice-select";
 
 
@@ -24,6 +24,9 @@ export default function MediaControl(){
                 <FastForward />
             </Button>
             <VoiceSelect voices={voices}/>
+            <Button variant={"ghost"} className="p-0 p-2 rounded-full">
+                <Download />
+            </Button>
         </Card>
     )
 }

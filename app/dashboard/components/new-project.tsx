@@ -31,19 +31,19 @@ export function NewProjectMenu() {
                         </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                        <Link href="#" className="flex">
+                        <Link href="voice-over" className="flex">
                         <AudioWaveformIcon className="mr-2 h-4 w-4" />
                         <span>Voice Over</span>
                         </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                        <Link href="#" className="flex">
+                        <Link href="voice-clone" className="flex">
                         <AudioLines className="mr-2 h-4 w-4" />
                         <span>Voice Clone</span>
                         </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                        <Link href="#" className="flex">
+                        <Link href="audio-book" className="flex">
                         <BookAudio className="mr-2 h-4 w-4" />
                         <span>Audio Book</span>
                         </Link>

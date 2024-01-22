@@ -26,14 +26,14 @@ export default function Sidebar (){
                             href: "#"
                         },
                         {
-                            title: "Drafts",
+                            title: "DOR",
                             label: "",
                             icon: BookAudio,
                             variant: "ghost",
                             href: "#"
                         },
                         {
-                            title: "Sent",
+                            title: "Untitled Project",
                             label: "",
                             icon: FileAudio,
                             variant: "ghost",
